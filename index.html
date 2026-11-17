@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+</head>
+<body>
+   <div class="auth-container">
+    <h1>Student Portal </h1>
+     
+     <form id="loginform">
+    <!---login form--->
+        <label>Email:</label>
+        <input type = "email" name="email"><br><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+        <input type="submit" name="Login" value=" Login">
+            <p class="toggle-text">Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+
+
+     </form>
+     <br>
+     <form id="registrationform"  class="hidden">
+       <!---registration form--->
+        <label>FullName:</label> <input type ="text" name="fname"><br><br>
+        <label>E-mail:</label> <input type ="email" name="email"><br><br>
+        <label>Password:</label>
+         <input type="password" name="password"><br><br>
+         <input type="submit" name="Register" value="Register">
+
+            <p class="toggle-text"> Already have an account<a href="#" id="showLogin"> Login here</a></p>
+
+     </form>
+      </div>
+
+     <script src="js/script.js"></script>
+</body>
+
+</html>
